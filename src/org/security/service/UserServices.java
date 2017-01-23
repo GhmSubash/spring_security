@@ -6,7 +6,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import org.security.model.User;
+import org.security.auth.model.User;
+
 
 public class UserServices {
 	

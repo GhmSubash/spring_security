@@ -1,4 +1,4 @@
-package org.security.model;
+package org.security.auth.model;
 
 import java.util.Collection;
 
@@ -19,9 +19,9 @@ public class User implements UserDetails{
 	private boolean enabled;
 	
 	private Collection<GrantedAuthority> authorities;
-    private boolean accountNonExpired = true;
-    private boolean accountNonLocked = true;
-    private boolean credentialsNonExpired = true;
+    private boolean accountNonExpired = false;
+    private boolean accountNonLocked = false;
+    private boolean credentialsNonExpired = false;
     
 	public String getAuthority() {
 		return authority;
